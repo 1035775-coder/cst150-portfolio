@@ -1,7 +1,7 @@
 /* TEAM */
-  Developer: [Michael Bryce Sincero]
+  Developer: Michael Bryce Sincero
   Role: Computer Science Student
-  Contact: 1034775@student.sae.edu.au
+  Contact: 1035775@student.sae.edu.au
 
 /* SITE */
   Last update: October 2026
