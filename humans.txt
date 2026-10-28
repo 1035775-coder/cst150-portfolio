@@ -1,0 +1,10 @@
+/* TEAM */
+  Developer: [Michael Bryce Sincero]
+  Role: Computer Science Student
+  Contact: 1034775@student.sae.edu.au
+
+/* SITE */
+  Last update: October 2026
+  Language: English
+  Doctype: HTML5
+  IDE: Google Cloud Shell

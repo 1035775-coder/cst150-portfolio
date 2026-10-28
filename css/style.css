@@ -1,0 +1,140 @@
+/* --- CSS VARIABLES (Color Palette) --- */
+/* A modern, dark-mode 4-color palette */
+:root {
+    --bg-color: #121212;       /* Very dark grey for background */
+    --surface-color: #1e1e1e;  /* Lighter grey for cards/header */
+    --primary-color: #64ffda;  /* Bright teal for accents and links */
+    --text-color: #e0e0e0;     /* Off-white for readable text */
+}
+
+/* --- RESET & GLOBAL STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container to keep content centered with padding */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- HEADER & NAV --- */
+header {
+    background-color: var(--surface-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- MAIN SECTIONS --- */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--surface-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+/* --- PROJECT GRID --- */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--surface-color);
+    margin-top: 40px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablet & Mobile styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
