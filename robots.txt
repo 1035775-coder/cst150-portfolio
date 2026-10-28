@@ -3,3 +3,6 @@
 
 User-agent: *
 Allow: /
+
+# Point bots to the sitemap
+Sitemap: https://1035775-coder.github.io/cst150-portfolio/
